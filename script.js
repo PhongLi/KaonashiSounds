@@ -21,11 +21,52 @@ $(function()
 	var playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
 	
 	var songs = [{
-		artist: "Dig Didzay",
-		name: "Nếu Anh Đi (Cover)",
-		url: "Musics/NeuAnhDi.mp3",
-		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
-	}];
+		artist: "Moving",
+		name: "I eat Plants for a living",
+		url: "Musics/I eat Plants for a living - Moving.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000248725672-iej53a-original.jpg"
+	}, {
+		artist: "Fujishen",
+		name: "Tweetheart",
+		url: "Musics/LpaS8e1gikMH.128.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-33k8xtyGROfQRCyj-eaUYzw-original.jpg"
+}, {
+		artist: "Russ",
+		name: "Psycho Pt. 2 (beat)",
+		url: "Musics/Russ - Psycho Pt. 2 (beat) _ nt reboot.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000371965452-munoop-original.jpg"
+}, {
+		artist: "$unXIX",
+		name: "Sunday Morning",
+		url: "Musics/xMol5nRIJ4JL.128.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-QqahOIq02lLBemE8-8r1bZw-original.jpg"
+}, {
+		artist: "Elijah Who",
+		name: "Hello",
+		url: "Musics/elijahwho-hello.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000481697607-ar2wrg-original.jpg"
+}, {
+		artist: "ayeon & lofty ",
+		name: "sketches of home EP",
+		url: "Musics/ayeon & lofty - sketches of home EP.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000631212565-fjlxzs-original.jpg"
+}, {
+		artist: "Ai Means Love.",
+		name: "would you? (w/ maggery)",
+		url: "Musics/Ai Means Love..mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000598092845-oatzej-original.jpg"
+}, {
+		artist: "ayeon & lofty ",
+		name: "sketches of home EP",
+		url: "Musics/ayeon & lofty - sketches of home EP.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000371965452-munoop-original.jpg"
+}, {
+		artist: "ayeon & lofty ",
+		name: "sketches of home EP",
+		url: "Musics/ayeon & lofty - sketches of home EP.mp3",
+		picture: "https://raw.githubusercontent.com/PhongLi/KaonashiSounds/master/cover/artworks-000371965452-munoop-original.jpg"
+},
+	];
 	
 	function shuffle(a) {
 		var j, x, i;
@@ -236,6 +277,7 @@ $(function()
                 --currIndex;
             else
                 ++currIndex;
+			albumArt.find('img').attr('src', currArtwork);
         }
     }
 
